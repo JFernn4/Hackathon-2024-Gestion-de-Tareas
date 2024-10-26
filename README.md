@@ -18,6 +18,6 @@
   - Eliminar tareas que ya no son necesarias.
 
 ## Capturas de Pantalla 📸
-![Pantalla Principal](Documents\Progra Avanzada\ImagenTarea)
+![Pantalla Principal](https://github.com/JFernn4/Hackathon-2024-Gestion-de-Tareas/blob/master/ImagenTarea.jpg)
 
 ¡Gracias por revisar nuestro proyecto! Esperamos que lo disfruten. 😊
