@@ -4,26 +4,35 @@
              x:Class="GestionDeTareas.MainPage"
              xmlns:viewmodel="clr-namespace:GestionDeTareas.ViewModel"
              x:DataType="viewmodel:MainViewModel">
-    <Grid RowDefinitions="100, Auto, *"
+    <Grid RowDefinitions="100, Auto, Auto"
           ColumnDefinitions=".75*,.25*"
           Padding="10"
-          RowSpacing="10"
+          RowSpacing="60"
           ColumnSpacing="10">
 
-        <Image Grid.ColumnSpan="2"
-               Source="xd.png"
-               BackgroundColor="DarkBlue"
+        <Image Grid.ColumnSpan="2" 
+               Source="logowide.png"
+               HeightRequest="400"
+               BackgroundColor="Transparent"
+               
                />
-        <Entry Placeholder=" Añadir tarea"
-               Text="{Binding Text}"
-               Grid.Row="1"/>
-
+        <Entry Placeholder="Añadir tarea"
+       Text="{Binding Text}"
+       PlaceholderColor="Black"
+               Grid.Row="1"
+            TextColor="Black"
+       BackgroundColor="Transparent"
+                    FontSize="14"/>
         <Button Text="Agregar"
+                FontSize="14"
+                CornerRadius="0"
+                TextColor="White"
                 Command="{Binding AddCommand}"
                 Grid.Row="1"
                 Grid.Column="1"
-                BackgroundColor="DarkBlue"/>
-            <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
+                BackgroundColor="Black"/>
+                
+        <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
                             ItemsSource="{Binding Items}"
                             SelectionMode="None">
                 
@@ -34,13 +43,14 @@
                         <SwipeView.RightItems>
                             <SwipeItems>
                                 <SwipeItem Text="Eliminar"
-                                           BackgroundColor="DarkRed"
-                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}},Path=DeleteCommand}"
-                                           CommandParameter="{Binding .}"/>
+                               BackgroundColor="Black"
+                               
+                               Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=DeleteCommand}"
+                               CommandParameter="{Binding .}"/>
                             </SwipeItems>
                         </SwipeView.RightItems>
-                            <Grid Padding="0.5">
-                        <Frame>
+                        <Grid Padding="0">
+                        <Frame CornerRadius="0">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer
                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}},Path=TapCommand}"
