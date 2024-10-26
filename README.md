@@ -16,6 +16,16 @@
   - Añadir nuevas tareas.
   - Editar tareas existentes.
   - Eliminar tareas que ya no son necesarias.
+ 
+## Nombre del Equipo
+  # ⭐️⭐️⭐️ AFJJ  ⭐️⭐️⭐️
+  
+## Integrantes del Equipo 🎉
+- 👤 **Jimmy Fernando Quevedo De León**
+- 👤 **Fátima María José Tzoc Monroy**
+- 👤 **Andrea de Jesús Alvarez Perez**
+- 👤 **Josué Andre Menéndez Juarez**
+
 
 ## Capturas de Pantalla 📸
 ![Pantalla Principal](https://github.com/JFernn4/Hackathon-2024-Gestion-de-Tareas/blob/master/ImagenTarea.jpg)
