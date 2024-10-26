@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using GestionDeTareas.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace GestionDeTareas
 {
@@ -18,7 +19,8 @@ namespace GestionDeTareas
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
             return builder.Build();
         }
     }

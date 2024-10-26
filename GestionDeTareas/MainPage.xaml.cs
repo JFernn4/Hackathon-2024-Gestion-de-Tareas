@@ -1,17 +1,15 @@
-﻿namespace GestionDeTareas
+﻿using GestionDeTareas.ViewModel;
+
+namespace GestionDeTareas
 {
     public partial class MainPage : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public MainPage(MainViewModel vm)
         {
             InitializeComponent();
-        }
-
-        private void RegistrarTareaBotonPulsado(object sender, EventArgs e)
-        {
-            
+            BindingContext = vm;
         }
     }
 

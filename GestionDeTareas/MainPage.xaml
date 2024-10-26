@@ -1,37 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GestionDeTareas.MainPage">
+             x:Class="GestionDeTareas.MainPage"
+             xmlns:viewmodel="clr-namespace:GestionDeTareas.ViewModel"
+             x:DataType="viewmodel:MainViewModel">
+    <Grid RowDefinitions="100, Auto, *"
+          ColumnDefinitions=".75*,.25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="xd.png"
-                HeightRequest="300"
-                Aspect="AspectFit" />
+        <Image Grid.ColumnSpan="2"
+               Source="xd.png"
+               BackgroundColor="DarkBlue"
+               />
+        <Entry Placeholder=" Añadir tarea"
+               Text="{Binding Text}"
+               Grid.Row="1"/>
 
-            <Label
-                Text="Gestion de tareas"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+        <Button Text="Agregar"
+                Command="{Binding AddCommand}"
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="DarkBlue"/>
+            <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
+                            ItemsSource="{Binding Items}">
+               
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type x:String}">
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Eliminar"
+                                           BackgroundColor="DarkRed"
+                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}},Path=DeleteCommand}"
+                                           CommandParameter="{Binding .}"/>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                            <Grid Padding="0.5">
+                        <Frame>
+                        <Label Text="{Binding .}"
+                                     FontSize="14"/>
+                        </Frame>
+                    </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            </CollectionView>
 
-            <Label
-                Text="Bienvenido al gestor de tareas"
-                TextColor="Gray"
-                Style="{StaticResource SubHeadline}" 
-                />
-
-            <Button
-                x:Name="RegistrarTareaBoton"
-                Text="Añadir tarea"
-                Clicked="RegistrarTareaBotonPulsado"
-                HorizontalOptions="Fill"
-                BackgroundColor="Black" 
-                TextColor="White"
-                />
-        </VerticalStackLayout>
-    </ScrollView>
-
+    </Grid>
 </ContentPage>
