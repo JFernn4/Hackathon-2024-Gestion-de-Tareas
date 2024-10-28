@@ -2,6 +2,7 @@
 
 
 # PROYECTO HACKATHON 🎉
+![HACKATHON](https://i.imgur.com/CsEcXK7.png)
 
 ## Descripción
 ¡Bienvenidos a nuestra aplicación personalizada! 🎓 Esta herramienta está diseñada para ayudar a los estudiantes a gestionar sus tareas de manera eficiente y atractiva.
