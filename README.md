@@ -1,7 +1,3 @@
-
-
-
-# PROYECTO HACKATHON 🎉
 ![HACKATHON](https://i.imgur.com/CsEcXK7.png)
 
 ## Descripción
