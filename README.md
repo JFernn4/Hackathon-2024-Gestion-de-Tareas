@@ -16,7 +16,7 @@
 - **Acceder al portal académico**
  
 ## Nombre del Equipo
-  # ⭐️⭐️⭐️ AFJJ  ⭐️⭐️⭐️
+![AFJJ](https://i.imgur.com/EyyAhqE.png)
   
 ## Integrantes del Equipo 🎉
 - 👤 **Jimmy Fernando Quevedo De León**
