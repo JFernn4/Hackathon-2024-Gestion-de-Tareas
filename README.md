@@ -11,10 +11,9 @@
 - **.NET MAUI**
 
 ## Funcionalidades Implementadas ✅
-- **Gestión de Tareas:** 
-  - Añadir nuevas tareas.
-  - Eliminar tareas que ya no son necesarias.
-  - Acceder al portal académico.
+- **Añadir nuevas tareas**
+- **Eliminar tareas que ya no son necesarias**
+- **Acceder al portal académico**
  
 ## Nombre del Equipo
   # ⭐️⭐️⭐️ AFJJ  ⭐️⭐️⭐️
