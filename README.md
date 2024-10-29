@@ -1,7 +1,8 @@
 ![HACKATHON](https://i.imgur.com/CsEcXK7.png)
 
 ## Descripción
-Esta aplicación multiplataforma está diseñada específicamente para estudiantes que buscan optimizar su organización y rendimiento académico. Ofrece una interfaz intuitiva y amigable para apuntar, organizar y gestionar todas sus tareas y actividades en una lista personalizada.
+"URL Notes" es una aplicación multiplataforma que está diseñada específicamente para estudiantes que buscan optimizar su organización y rendimiento académico. Ofrece una interfaz intuitiva y amigable para apuntar, organizar y gestionar todas sus tareas y actividades en una lista personalizada.
+
 Objetivo: Facilitar la organización y administración de las tareas estudiantiles para mejorar el rendimiento académico y reducir el estrés asociado con la carga de trabajo.
 ## Tecnologías utilizadas 🚀
 - **C#**
