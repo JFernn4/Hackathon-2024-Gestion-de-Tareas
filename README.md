@@ -19,7 +19,7 @@ Objetivo: Facilitar la organización y administración de las tareas estudiantil
 ## Integrantes del Equipo 
 - 👤 **Jimmy Fernando Quevedo De León**
 - 👤 **Fátima María José Tzoc Monroy**
-- 👤 **Andrea de Jesús Alvarez Perez**
+- 👤 **Andrea Rhowssel Alvarez Perez**
 - 👤 **Josué Andre Menéndez Juarez**
 
 
