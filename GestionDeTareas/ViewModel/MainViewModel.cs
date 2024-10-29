@@ -47,4 +47,13 @@ public partial class MainViewModel : ObservableObject
     {
         await Shell.Current.GoToAsync($"{nameof(DetailPage)}?Text={s}");
     }
+    [RelayCommand]
+    async Task AbrirLink()
+    {
+        var url = "https://principal.url.edu.gt/";
+        if (Uri.TryCreate(url, UriKind.Absolute, out var uri))
+        {
+            await Launcher.Default.OpenAsync(uri);
+        }
+    }
 }

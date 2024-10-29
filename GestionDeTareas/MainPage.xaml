@@ -9,13 +9,14 @@
           Padding="10"
           RowSpacing="60"
           ColumnSpacing="10">
-
-        <Image Grid.ColumnSpan="2" 
-               Source="logowide.png"
-               HeightRequest="400"
-               BackgroundColor="Transparent"
-               
-               />
+        <Image Grid.Row="0" Grid.ColumnSpan="2"
+               HeightRequest="200"
+       Source="logowide.png"
+       BackgroundColor="Transparent">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding AbrirLinkCommand}" />
+            </Image.GestureRecognizers>
+        </Image>
         <Entry Placeholder="Añadir tarea"
        Text="{Binding Text}"
        PlaceholderColor="Black"
@@ -31,39 +32,38 @@
                 Grid.Row="1"
                 Grid.Column="1"
                 BackgroundColor="Black"/>
-                
+
         <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
                             ItemsSource="{Binding Items}"
                             SelectionMode="None">
-                
-               
+
+
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="{x:Type x:String}">
                     <SwipeView>
                         <SwipeView.RightItems>
                             <SwipeItems>
                                 <SwipeItem Text="Eliminar"
-                               BackgroundColor="Black"
+                               BackgroundColor="Orange"
                                
                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=DeleteCommand}"
                                CommandParameter="{Binding .}"/>
                             </SwipeItems>
                         </SwipeView.RightItems>
                         <Grid Padding="0">
-                        <Frame CornerRadius="0">
+                            <Frame CornerRadius="0">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer
                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}},Path=TapCommand}"
                                          CommandParameter="{Binding .}"/>
                                 </Frame.GestureRecognizers>
-                        <Label Text="{Binding .}"
+                                <Label Text="{Binding .}"
                                      FontSize="14"/>
-                        </Frame>
-                    </Grid>
+                            </Frame>
+                        </Grid>
                     </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-            </CollectionView>
-
+        </CollectionView>
     </Grid>
 </ContentPage>
