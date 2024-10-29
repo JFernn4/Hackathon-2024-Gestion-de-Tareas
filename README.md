@@ -23,6 +23,6 @@
 
 
 ## Capturas de Pantalla 📸
-![Pantalla Principal](https://github.com/JFernn4/Hackathon-2024-Gestion-de-Tareas/blob/master/ImagenTarea.jpg)
+![Pantalla Principal](https://i.imgur.com/GgffmnY.gif)
 
 ¡Gracias por revisar nuestro proyecto! Esperamos que lo disfruten. 😊
