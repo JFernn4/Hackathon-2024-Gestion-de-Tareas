@@ -1,7 +1,4 @@
-
-
-
-# PROYECTO HACKATHON 🎉
+![HACKATHON](https://i.imgur.com/CsEcXK7.png)
 
 ## Descripción
 ¡Bienvenidos a nuestra aplicación personalizada! 🎓 Esta herramienta está diseñada para ayudar a los estudiantes a gestionar sus tareas de manera eficiente y atractiva.
@@ -11,14 +8,12 @@
 - **.NET MAUI**
 
 ## Funcionalidades Implementadas ✅
-- **Temas Personalizados:** Adapta la interfaz según la carrera del estudiante.
-- **Gestión de Tareas:** 
-  - Añadir nuevas tareas.
-  - Editar tareas existentes.
-  - Eliminar tareas que ya no son necesarias.
+- **Añadir nuevas tareas**
+- **Eliminar tareas que ya no son necesarias**
+- **Acceder al portal académico**
  
 ## Nombre del Equipo
-  # ⭐️⭐️⭐️ AFJJ  ⭐️⭐️⭐️
+![AFJJ](https://i.imgur.com/EyyAhqE.png)
   
 ## Integrantes del Equipo 🎉
 - 👤 **Jimmy Fernando Quevedo De León**
